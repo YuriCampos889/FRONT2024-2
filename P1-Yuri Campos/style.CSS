@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+    margin: 0;
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background: linear-gradient(45deg, #000000, #a50923);
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2px 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: "poppins";
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: "poppins";
+
+}
+
+
+
+
+/* Título */
+.titulo {
+    text-align: center;
+    padding: 20px;
+    background-image: url(imagens/BloodMoon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.titulo h1{
+    font-size: 3em;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin: 40px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "poppins";
+}
+.titulo h2{
+    color: white;
+    font-family: "poppins";
+
+}
+
+
+
+
+
+/*Galeria dos Desenhos*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 2100px;
+    margin: 0 auto;
+    border-radius: 0px;
+    border: 50px;
+    border-style:double;
+    background: linear-gradient(10deg, #000000, #4e4242);
+    border-color:#180000
+}
+
+.imagem-quadrada {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px #fff;
+    border-top: 10px solid white;
+    border-bottom: 10px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+/*Sobre o Artista*/
+.sobre-artista {
+    border: 50px #000000;
+    border-top: 70px solid #000000;
+    border-style:double;
+    background: linear-gradient(45deg, #000000, #a8001c);
+    display: flex;
+    justify-content: space-between;
+    align-items: none;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.texto-artista {
+    flex: 1;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 25px;
+    position: relative;
+    left: 170px;
+    margin-left: 370px;
+    font-family: "poppins";
+}
+.foto-artista img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    left: -820px;
+    top: 50px;
+}
+
+.divisoria {
+    width: 10px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: relative;
+    right: 709px;
+    top: 5px;
+}
+
+
+
+
+
+/* Newsletter */
+.newsletter {
+    border: double rgb(150, 5, 5);
+    padding: 80px;
+    background: linear-gradient(10deg, #000000, #4e4242);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+    left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter p {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    left: 360px;
+    border: solid white;
+}
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff3300;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #b8332a;
+}
+
+
+
+
+
+
+/* Rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background: linear-gradient(45deg, #000000, #a50923);
+    color: #fff;
+}
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+.rodape p {
+    margin: left;
+    font-family: "poppins";
+}
+.social-media img:hover {
+    transform: scale(1.2);
+}
